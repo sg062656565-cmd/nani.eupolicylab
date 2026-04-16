@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 歐盟政策實驗室：難民協議篇 (EU Policy Lab: Refugee Protocol)
 
-# Run and deploy your AI Studio app
+這是一個基於 React 與 Gemini AI 的外交談判模擬遊戲。
 
-This contains everything you need to run your app locally.
+## 如何開始
 
-View your app in AI Studio: https://ai.studio/apps/2d389fa0-a28b-4022-bdb1-104ce30c8901
+1. **取得 Gemini API Key**：
+   - 前往 [Google AI Studio](https://aistudio.google.com/)。
+   - 登入您的 Google 帳號並點擊 「Get API key」。
+   - 複製產生的金鑰。
 
-## Run Locally
+2. **輸入 API Key**：
+   - 在網頁啟動後的初始介面中，直接輸入您的 Gemini API Key。
+   - 系統會將金鑰安全地儲存在您的瀏覽器本地儲存空間 (localStorage) 中。
 
-**Prerequisites:**  Node.js
+## 部署規範說明
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+本專案遵循 Cloudflare Pages 部署規範：
+- HTML 啟動腳本位於 `index.html` 底部。
+- API Key 透過網頁 UI 輸入，不硬編碼於程式碼中。
+- 專案架構採用標準 Vite 結構。
